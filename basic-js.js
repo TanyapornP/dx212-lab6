@@ -38,10 +38,10 @@ function calculateGrade(score){
         return "F";
     }
 }
-console.assertlog(calculateGrade(90))
+console.assert(calculateGrade(90) === "A");
 
 for (let i=0 ; i<scores.length;mi++){
     let grade = calculateGrade(scores[i]);
-    console.log(`Score: ${scores[i]},Grade:${grade}`)
+    console.log(`Score: ${scores[i]},Grade:${grade}`);
 }
     
