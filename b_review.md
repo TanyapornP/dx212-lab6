@@ -1,0 +1,2 @@
+ลบการคำนวณซ้ำซ้อน (DRY & Redundant Operations) 
+เหตุผล: ในข้อ 4 มีการเรียก team.filter((member) => member.role === "Dev") ซ้ำอีกรอบ ทั้งที่ในข้อ 2 ได้ประกาศตัวแปร developers เก็บผลลัพธ์นี้ไว้แล้ว การ filter ซ้ำทำให้โค้ดทำงานสองรอบโดยไม่จำเป็น (เพิ่ม Time Complexity และเปลืองหน่วยความจำจากการสร้าง intermediate array ใหม่)
